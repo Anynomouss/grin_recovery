@@ -1,5 +1,5 @@
 # grin_recovery a Grin Wallet Recovery Tool
-Grin recovery is an as easy to use recovery script/tool to recover your grin wallet.  
+Grin recovery is an as easy to use recovery script/tool to recover your grin wallet.
 The scripts takes passwords printed from the console as input (STDIN) and tests if your wallet file can be unlocked.
 This tool is powered by **Grinventions mimblewimble-py** library:
 
@@ -45,8 +45,8 @@ In case you cannot figure it out yourself, I can help. You can contact me as use
 For issues with the code you can open a Github Issue.  
   
 ## Security implications  
-The above benchmarks show you that on a decent CPU you can recover/brute-force a Grin wallets with 40.000 passwords per seconds. Should you be worried? No, not really. Bitcoin Core Wallets on a RTX2080-Ti GPU can be brute-forced with a speed of >10.000 passwords per second, while Electrum wallets can be recovered with a speed o close to a billion passwords per second. Having a recovery tool available is just a healthy part of any crypt-currencies ecosystem. 
-These benchmark results do show you you should use a reasonably safe password, e.g. two or three words, some numbers and a special character. Preferably a typo or custom word to protect against direct dictionary usage. Using a pin, e.g. 19261231, should be considered unsafe, it would take 8 minutes to brute force on a Ryzen 7 CPU. Obviously, you should share your wallet.seed with anyone you do not completely trust with your funds.
+The above benchmarks show you that on a decent CPU you can recover/brute-force a Grin wallets with 40.000 passwords per seconds. Should you be worried? No, not really. Bitcoin Core Wallets on a RTX2080-Ti GPU can be brute-forced with a speed of >10.000 passwords per second, while Electrum wallets can be recovered with a speed of close to a billion passwords per second. Having a recovery tool available is a healthy part of any crypt-currencies ecosystem. 
+These benchmark results do show you you that you should use a properly safe password like you should for any crypto wallet. E.g. you can use two or three words, some numbers and a special character. Preferably a typo or a custom word to protect against dictionary attack. Using a pin, e.g. 19261231, should be considered unsafe .It would take 8 minutes to brute force such a pin on a Ryzen 7 CPU. Obviously, you should not share your *wallet.seed* file with anyone you do not completely trust with your funds.
   
 
 
