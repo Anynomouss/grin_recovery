@@ -8,7 +8,7 @@ import mimblewimble
 from mimblewimble.wallet import Wallet
 
 if __name__ == '__main__':
-    ## USER INPUT
+    ## TLDR; README
     '''
     1) Copy the wallet you want to recover the password for into the same directory
     as the script. It is assumed your wallet has the name "wallet.seed"
