@@ -19,7 +19,7 @@ https://hashcat.net/hashcat/
 ## Example command to run this script. 
 Note that the test wallet provided with the script has the password "Test123"`. Note that on linux you have to use python 3, which often means you have to replace 'python' with 'python3'in the commands below. Similarly for installing libraries with 'pip', if it doe not work, try 'pip3'
 
-    time cat passwords.txt python.exe grin-recover.py
+    time cat passwords.txt |python.exe grin-recover.py
     time printf 'HelloWorld\n%.0s' {1..1000000} | ../../Python/Python311/python.exe
 
 ### Benchmark speed/time for one million passwords 
@@ -46,7 +46,7 @@ For issues with the code you can open a Github Issue.
   
 ## Security implications  
 The above benchmarks show you that on a decent CPU you can recover/brute-force a Grin wallets with 40.000 passwords per seconds. Should you be worried? No, not really. Bitcoin Core Wallets on a RTX2080-Ti GPU can be brute-forced with a speed of >10.000 passwords per second, while Electrum wallets can be recovered with a speed o close to a billion passwords per second. Having a recovery tool available is just a healthy part of any crypt-currencies ecosystem. 
-These benchmark results do show you you should use a reasonably safe password, e.g. two or three words, some numbers and a special character. Preferably a typo or custom word to protect against direct dictionary usage. Using a pin, e.g. 19261231, should be considered unsafe, it would take 8 minutes to brute force on a Ryzen 6 CPU. Obviously, you should share your wallet.seed with anyone you do not completely trust with your funds.
+These benchmark results do show you you should use a reasonably safe password, e.g. two or three words, some numbers and a special character. Preferably a typo or custom word to protect against direct dictionary usage. Using a pin, e.g. 19261231, should be considered unsafe, it would take 8 minutes to brute force on a Ryzen 7 CPU. Obviously, you should share your wallet.seed with anyone you do not completely trust with your funds.
   
 
 
