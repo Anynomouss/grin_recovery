@@ -1,6 +1,6 @@
 # *grin-recover.py* a Grin Wallet Recovery Tool
 ![Keys](keys2.png)
-Grin recovery is an as easy to use recovery script/tool to unlock your lost grin wallet, *Alohomora*.
+Grin-recover is an as easy to use recovery script/tool to unlock your lost grin wallet, *Alohomora*.
 The scripts takes passwords printed from the console as input (STDIN) and tests if your wallet file can be unlocked.
 This tool is powered by **[Grinventions mimblewimble-py](https://github.com/grinventions/mimblewimble-py )** library:
 
@@ -13,7 +13,7 @@ If this recovery tool was useful to you, you can thank the developer by donating
 | Grin CC fund   | grin1jezf3lkcexvj3ydjwanan6khs42fr4036guh0c4vkc04fyxarl6svjzuuh | contact Anynomous on forum or Keybase   |
 
 
-## How to use grin-recovery
+## How to use *grin-recover.py*
 Grin recover(y) is a Python script, to it requires you to 
 1) Install Python (check your distribution, Linux comes with Python preinstalled, Window has Python in its APP store)
 2) Install mimblewimble-py 
