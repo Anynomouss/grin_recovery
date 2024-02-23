@@ -1,4 +1,4 @@
-# *grin-recover.py* a Grin Wallet Recovery Tool
+# *grin-recover.py* - A Grin Wallet Recovery Tool
 ![Keys](keys2.png)
 *grin-recover.py* is an as easy to use recovery script/tool to unlock your lost grin wallet, *Alohomora*.
 The scripts takes passwords printed from the console as input (STDIN) and tests if your wallet file can be unlocked.
