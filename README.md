@@ -26,12 +26,12 @@ https://hashcat.net/hashcat/
 Note that the test wallet provided with the script has the password "Test123"`. Note that on linux you have to use Python 3, which often means you have to replace '*python*' with '*python3*'in the commands below. Similarly for installing libraries with 'pip', if it doe not work, try 'pip3'
 
     time cat passwords.txt |python.exe grin-recover.py
-    time printf 'HelloWorld\n%.0s' {1..1000000} | python.exe
+    time printf 'HelloWorld\n%.0s' {1..1000000} | python grin-recover.py
 
 ### Benchmark speed/time for one million passwords 
 **Single Core:**
 
-    time printf 'HelloWorld\n%.0s' {1..1000000} | python grin-recover_0.1.py  
+    time printf 'HelloWorld\n%.0s' {1..1000000} | python grin-recover.py  
     
 **Multi-threaded:**
     
