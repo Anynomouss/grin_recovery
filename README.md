@@ -25,7 +25,7 @@ https://hashcat.net/hashcat/
 ## Example command to run this script. 
 Note that the test wallet provided with the script has the password "Test123"`. Note that on linux you have to use Python 3, which often means you have to replace '*python*' with '*python3*'in the commands below. Similarly for installing libraries with 'pip', if it doe not work, try 'pip3'
 
-    time cat passwords.txt |python.exe grin-recover.py
+    time cat passwords.txt | python.exe grin-recover.py
     time printf 'HelloWorld\n%.0s' {1..1000000} | python grin-recover.py
 
 ### Benchmark speed/time for one million passwords 
@@ -35,7 +35,7 @@ Note that the test wallet provided with the script has the password "Test123"`. 
     
 **Multi-threaded:**
     
-    time printf 'HelloWorld\n%.0s' {1..10000000} |  parallel --pipe -j 16 --blocksize 10000 --spreadstdin python grin-recover.py
+    time printf 'HelloWorld\n%.0s' {1..10000000} | parallel --pipe -j 16 --blocksize 10000 --spreadstdin python grin-recover.py
      
 Benchmark results on a Ryzen 7, 8 core 16 threads:
  
@@ -44,7 +44,7 @@ Benchmark results on a Ryzen 7, 8 core 16 threads:
      
 ### Example using hashcat output with multithreading
 
-    ./hashcat.exe -a1 words.txt endings.txt --stdout |  parallel --pipe -j 16 --blocksize 100000 --spreadstdin python grin-recover.py  
+    ./hashcat.exe -a1 words.txt endings.txt --stdout | parallel --pipe -j 16 --blocksize 100000 --spreadstdin python grin-recover.py  
   
 ## Help needed?
 In case you cannot figure it out yourself, I can help. You can contact me as user *Anynomous* on https://forum.grin.mw/. Note that I will only help you if you show ample proof (such as knowledge of the password) to proof you are the owner of the wallet.  
