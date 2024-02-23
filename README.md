@@ -1,17 +1,16 @@
-# grin_recovery a Grin Wallet Recovery Tool
+# Grin_recovery a Grin Wallet Recovery Tool
+![Keys](keys2.png)
 Grin recovery is an as easy to use recovery script/tool to unlock your lost grin wallet, *Alohomora*.
 The scripts takes passwords printed from the console as input (STDIN) and tests if your wallet file can be unlocked.
-This tool is powered by **Grinventions mimblewimble-py** library:
+This tool is powered by **[Grinventions mimblewimble-py](https://github.com/grinventions/mimblewimble-py )** library:
 
-https://github.com/grinventions/mimblewimble-py  
-  
-If this tool was useful, you can thank the developer by donating to any of the following funds:
+If this recovery tool was useful to you, you can thank the developer by donating to any of the following funds:
 
-|# Fund       | # Address     | #Contact |
-|--------------|-----------|------------|
-| Grinvention   | grin1vcjsgk6rltncqh7cxjywukjfrf825d8a6xk77msfuhf9ev3r55wq7l2ng4      | *7*        |
+|# Fund        | # Address     | #Contact    |
+|--------------|---------------|------------|
+| Grinvention   | grin1vcjsgk6rltncqh7cxjywukjfrf825d8a6xk77msfuhf9ev3r55wq7l2ng4      | renzokuken*keybase.io|
 | Grin Community fund     | grin1wm78wjsf2ws507hea4zqrcywxltjwhtgfrwzhdrr9l80l7tpz5fsj58lk0 | Keybase grincoin#community_fund|
-| Grin CC fund   | grin1jezf3lkcexvj3ydjwanan6khs42fr4036guh0c4vkc04fyxarl6svjzuuh | contact Anynomous on forum    |
+| Grin CC fund   | grin1jezf3lkcexvj3ydjwanan6khs42fr4036guh0c4vkc04fyxarl6svjzuuh | contact Anynomous on forum or Keybase   |
 
 
 ## How to use grin-recovery
