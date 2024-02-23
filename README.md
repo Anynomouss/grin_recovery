@@ -6,7 +6,7 @@ This tool is powered by **[Grinventions mimblewimble-py](https://github.com/grin
 
 If this recovery tool was useful to you, you can thank the developer by donating to any of the following funds:
 
-|# Fund        | # Address     | #Contact    |
+|# Fund        | # Address     | # Contact    |
 |--------------|---------------|------------|
 | Grinvention   | grin1vcjsgk6rltncqh7cxjywukjfrf825d8a6xk77msfuhf9ev3r55wq7l2ng4      | renzokuken*keybase.io|
 | Grin Community fund     | grin1wm78wjsf2ws507hea4zqrcywxltjwhtgfrwzhdrr9l80l7tpz5fsj58lk0 | Keybase grincoin#community_fund|
