@@ -1,14 +1,21 @@
 # grin_recovery a Grin Wallet Recovery Tool
-Grin recovery is an as easy to use recovery script/tool to recover your grin wallet.
+Grin recovery is an as easy to use recovery script/tool to unlock your lost grin wallet, *Alohomora*.
 The scripts takes passwords printed from the console as input (STDIN) and tests if your wallet file can be unlocked.
 This tool is powered by **Grinventions mimblewimble-py** library:
 
 https://github.com/grinventions/mimblewimble-py  
   
-If this tool was useful, you can thank the developer by donating to Grinvention, see the donation address on the GitHub page or any other Grin related fund such as the Grin general or CC fund.  
+If this tool was useful, you can thank the developer by donating to any of the following funds:
+
+|# Fund       | # Address     | #Contact |
+|--------------|-----------|------------|
+| Grinvention   | grin1vcjsgk6rltncqh7cxjywukjfrf825d8a6xk77msfuhf9ev3r55wq7l2ng4      | *7*        |
+| Grin Community fund     | grin1wm78wjsf2ws507hea4zqrcywxltjwhtgfrwzhdrr9l80l7tpz5fsj58lk0 | Keybase grincoin#community_fund|
+| Grin CC fund   | grin1jezf3lkcexvj3ydjwanan6khs42fr4036guh0c4vkc04fyxarl6svjzuuh | contact Anynomous on forum    |
+
 
 ## How to use grin-recovery
-Grin recovery is a Python script, to it requires you to 
+Grin recover(y) is a Python script, to it requires you to 
 1) Install Python (check your distribution, Linux comes with Python preinstalled, Window has Python in its APP store)
 2) Install mimblewimble-py 
 `python -m pip install mimblewimble`
@@ -45,8 +52,9 @@ In case you cannot figure it out yourself, I can help. You can contact me as use
 For issues with the code you can open a Github Issue.  
   
 ## Security implications  
-The above benchmarks show you that on a decent CPU you can recover/brute-force a Grin wallets with 40.000 passwords per seconds. Should you be worried? No, not really. Bitcoin Core Wallets on a RTX2080-Ti GPU can be brute-forced with a speed of >10.000 passwords per second, while Electrum wallets can be recovered with a speed of close to a billion passwords per second. Having a recovery tool available is a healthy part of any crypt-currencies ecosystem. 
-These benchmark results do show you you that you should use a properly safe password like you should for any crypto wallet. E.g. you can use two or three words, some numbers and a special character. Preferably a typo or a custom word to protect against dictionary attack. Using a pin, e.g. 19261231, should be considered unsafe .It would take 8 minutes to brute force such a pin on a Ryzen 7 CPU. Obviously, you should not share your *wallet.seed* file with anyone you do not completely trust with your funds.
+The above benchmarks show you that on a decent CPU you can recover/brute-force a Grin wallet with 40.000 passwords per seconds. Should you be worried? No, not really. Bitcoin Core Wallets on a RTX2080-Ti GPU can be brute-forced with a speed of >10.000 passwords per second, while Electrum wallets can be recovered with a speed of close to a billion passwords per second. Having a recovery tool available is a healthy part of any crypt-currencies ecosystem. 
+These benchmark results do show you that you should use a properly safe password like you should for any crypto wallet. E.g. you can use two or three words, some numbers, and a special character. Preferably a typo or a custom word to protect against dictionary attack. Using a pin, e.g. 19261231, should be considered unsafe. It would take 8 minutes to brute force such a pin on a Ryzen 7 CPU. Obviously, you should not share your *wallet.seed* file with anyone you do not completely trust with your funds.
+Also note that Grin wallets can be used to export the seed phrase. Meaning that reusing a seed phrase for a Grin wallet should only be done when using a very secure password, otherwise you risk exposing other wallets that use the same seed-phrase. In general, re-use of seed-phrase should be discouraged since it introduces unneeded risks.
   
 
 
