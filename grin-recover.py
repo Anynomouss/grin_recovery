@@ -1,8 +1,6 @@
 ## Author: Anynomous
-## Dependencies
 ## Don't forget to install mimlewimble.py: python -m pip install .
 import json    
-import os
 import sys
 import mimblewimble
 from mimblewimble.wallet import Wallet
@@ -15,7 +13,7 @@ if __name__ == '__main__':
     2) Run the script with your passwords list as input, see examples below:
      - time cat password_list.txt python.exe grin-recover.py
     3) A - Benchmark the speed, measure time it takes to test 10000 passwords single core
-     - time printf 'HelloWorld\n%.0s' {1..10000} | python grin-recover_0.1.py  
+     - time printf 'HelloWorld\n%.0s' {1..10000} | python grin-recover.py  
     3) B - Benchmark in parallel, settings are chose for 16 thread Ryzen 7
      - time printf 'HelloWorld\n%.0s' {1..100000} |  parallel --pipe -j 16 --blocksize 100000 --spreadstdin python grin-recover.py
      
@@ -38,8 +36,7 @@ if __name__ == '__main__':
         
     ## 2) Loop over all passwords
     for pwd in passwords:
-        pwd = pwd.strip()
-        password = pwd
+        password = pwd.strip()
         
         ## convert to bytes
         encrypted_seed = bytes.fromhex(seed['encrypted_seed'])
@@ -53,8 +50,8 @@ if __name__ == '__main__':
         valid = True
         try:
             w.unshieldWallet(password, nonce=nonce, salt=salt)
-            ## If found, print to stdout/console and to log.txt file
-            if valid: ## Print found password and store to a log file
+            ## If password found, print to stdout/console and to log.txt
+            if valid: 
                 print('Password found: {}'.format(password)) 
                 with open("log.txt", "a") as f:
                     print("{}:{}".format(target_keystore_file,pwd), file=f)
